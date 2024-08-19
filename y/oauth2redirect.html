@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>OAuth2 Redirect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>OAuth2 Redirect</h1>
+        <p>Your OAuth2 authorization was successful.</p>
+        <p id="full-url"></p>
+        <p>The page will automatically redirect you back to the app shortly.</p>
+        <script>
+            // Get the full URL including the query parameters
+            const fullUrl = window.location.href;
+
+            // Display the full URL on the page for verification
+            document.getElementById('full-url').textContent = fullUrl;
+
+            // Redirect back to the app with the full URL as a parameter after 5 seconds
+            setTimeout(() => {
+                window.location.href = `com.example.oathapp://oauth2redirect?${window.location.search}`;
+            }, 10000); // 5000 milliseconds = 5 seconds
+
+        </script>
+    </div>
+</body>
+</html>

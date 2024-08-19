@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "783748381221",
+    "project_id": "lololand-20091",
+    "storage_bucket": "lololand-20091.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783748381221:android:bac2abe955db20e20c9dcc",
+        "android_client_info": {
+          "package_name": "com.example.oathapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCJOBtGB4yDrgmQPXbuqdho-1i4WipS3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
